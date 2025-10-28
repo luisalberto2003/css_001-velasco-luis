@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de CSS - Ejemplo Didáctico</title>
+</head>
+<body>
+    <header style="background-color: aqua;">
+        <h1>Manual de CSS Básico</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Guía de Propiedades CSS</h2>
+            <p><strong>Este manual muestra las propiedades CSS más importantes.</strong> Observa cómo este mismo contenido HTML cambia de apariencia según el archivo CSS que uses. En la línea 8 puedes cambiar entre tema1.css (azul), tema2.css (oscuro), tema3.css (colorido) o tema4.css (gris).</p>
+            <h3>¿Qué puedes cambiar con CSS?</h3>
+            <p>Cada clase HTML (header, hero, article, card, etc.) puede tener su propio estilo CSS independiente. Los archivos tema1.css a tema4.css demuestran cómo diferentes colores y propiedades transforman la misma estructura.</p>
+            <button>Botón de ejemplo</button>
+        </section>
+
+        <section class="contenido">
+            <article>
+                <h3>Color (background & color)</h3>
+                <p><strong>background:</strong> cambia el color de fondo del elemento. Ejemplos:</p>
+                <code>background: #4a90e2;</code> → fondo azul<br>
+                <code>background: #2d2d2d;</code> → fondo gris oscuro<br>
+                <code>background: white;</code> → fondo blanco<br>
+                <p><strong>color:</strong> cambia el color del texto. Ejemplos:</p>
+                <code>color: white;</code> → texto blanco<br>
+                <code>color: #333;</code> → texto gris oscuro<br>
+                <code>color: #4a90e2;</code> → texto azul
+            </article>
+
+            <article>
+                <h3>Espaciado (padding & margin)</h3>
+                <p><strong>padding:</strong> espacio interno dentro del elemento. Ejemplos:</p>
+                <code>padding: 20px;</code> → 20px en todos los lados<br>
+                <code>padding: 10px 20px;</code> → 10px arriba/abajo, 20px izquierda/derecha<br>
+                <p><strong>margin:</strong> espacio externo alrededor del elemento. Ejemplos:</p>
+                <code>margin: 20px;</code> → 20px alrededor de todo el elemento<br>
+                <code>margin: 0;</code> → sin margen
+            </article>
+
+            <article>
+                <h3>Bordes y estructura</h3>
+                <p><strong>border:</strong> crea bordes alrededor de elementos. Ejemplos:</p>
+                <code>border: 2px solid #4a90e2;</code> → borde de 2px, sólido, azul<br>
+                <code>border-top: 5px solid #e74c3c;</code> → solo borde superior<br>
+                <p><strong>text-align:</strong> alinea el texto. Valores:</p>
+                <code>text-align: center;</code> → centrado<br>
+                <code>text-align: left;</code> → izquierda (por defecto)<br>
+                <code>text-align: right;</code> → derecha
+            </article>
+
+            <article>
+                <h3>Display y visibilidad</h3>
+                <p><strong>display:</strong> controla cómo se muestra el elemento. Ejemplos:</p>
+                <code>display: block;</code> → ocupa toda la línea (como div, p)<br>
+                <code>display: inline;</code> → no rompe línea (como span, a)<br>
+                <code>display: inline-block;</code> → combina ambos<br>
+                <code>display: none;</code> → oculta el elemento completamente
+            </article>
+
+            <article>
+                <h3>Otras propiedades útiles</h3>
+                <p><strong>font-family:</strong> cambia la fuente del texto.</p>
+                <code>font-family: Arial, sans-serif;</code> → fuente Arial<br>
+                <code>font-family: Georgia, serif;</code> → fuente Georgia<br>
+                <p><strong>font-weight:</strong> grosor del texto.</p>
+                <code>font-weight: bold;</code> → texto en negrita<br>
+                <code>font-weight: normal;</code> → texto normal
+            </article>
+
+            <article>
+                <h3>Cómo funciona CSS</h3>
+                <p><strong>Selector:</strong> indica qué elemento HTML afectar.</p>
+                <code>body { }</code> → afecta a todo el body<br>
+                <code>.hero { }</code> → afecta a elementos con class="hero"<br>
+                <code>header { }</code> → afecta a todos los header<br>
+                <p><strong>Propiedades:</strong> dentro de las llaves defines los estilos.</p>
+                <code>.hero { background: blue; color: white; }</code>
+            </article>
+        </section>
+        <div class="cards">
+            <div class="card">
+                <h4>Tema 1 (Azul)</h4>
+                <p>En tema1.css: colores azules (#4a90e2), fondo claro (#f0f8ff), bordes azules.</p>
+                <p><strong>Ejemplo de código:</strong></p>
+                <code>.hero { background: white; padding: 30px; }</code>
+            </div>
+            <div class="card">
+                <h4>Tema 2 (Oscuro)</h4>
+                <p>En tema2.css: fondo oscuro (#1a1a1a), acentos verdes (#00ff88), texto claro.</p>
+                <p><strong>Ejemplo de código:</strong></p>
+                <code>.hero { background: #2d2d2d; border: 3px solid #00ff88; }</code>
+            </div>
+            <div class="card">
+                <h4>Tema 3 (Colorido)</h4>
+                <p>En tema3.css: colores vibrantes (rojo #ff6b6b, turquesa #4ecdc4, amarillo #ffe66d).</p>
+                <p><strong>Ejemplo de código:</strong></p>
+                <code>.hero { border: 5px solid #4ecdc4; }</code>
+            </div>
+            <div class="card">
+                <h4>Tema 4 (Gris)</h4>
+                <p>En tema4.css: tonos grises (#2c3e50), estilo profesional, fuente Georgia.</p>
+                <p><strong>Ejemplo de código:</strong></p>
+                <code>.hero { border-left: 8px solid #2c3e50; }</code>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Manual de CSS. Ejemplo educativo de diferentes temas CSS.</p>
+    </footer>
+</body>
+</html>
+
